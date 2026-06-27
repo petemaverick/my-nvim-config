@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/dileepkumar/.local/**)",
+      "Read(//Users/dileepkumar/.cache/nvim/**)",
+      "Bash(nvim *)"
+    ]
+  }
+}
