@@ -6,7 +6,7 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 -- File explorer
-map("n", "<leader>e", function() require("oil").toggle_float() end, { desc = "Toggle file explorer (Oil)" })
+map("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle file tree (left)" })
 
 -- Diagnostics panel
 map("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Toggle Trouble diagnostics" })
