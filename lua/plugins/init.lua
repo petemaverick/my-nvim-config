@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     dependencies = { "williamboman/mason.nvim" },
     opts = {
-      ensure_installed = { "html", "cssls", "pyright", "ts_ls", "gopls" },
+      ensure_installed = { "html", "cssls", "pyright", "ts_ls", "gopls","clangd","rust-analyzer"},
     },
   },
 
