@@ -1,5 +1,10 @@
 return {
   {
+    "lewis6991/gitsigns.nvim",
+    opts = require "configs.gitsigns",
+  },
+
+  {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
     opts = require "configs.conform",
