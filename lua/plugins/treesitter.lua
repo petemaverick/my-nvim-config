@@ -4,7 +4,7 @@ return {
     local langs = {
       "vim", "lua", "vimdoc",
       "html", "css",
-      "python", "javascript", "typescript", "tsx", "go",
+      "python", "javascript", "typescript", "tsx", "go", "rust",
     }
     local install = require("nvim-treesitter.install")
     local config = require("nvim-treesitter.config")
