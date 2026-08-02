@@ -14,12 +14,14 @@ return {
     "williamboman/mason-lspconfig.nvim",
     dependencies = { "williamboman/mason.nvim" },
     opts = {
-      ensure_installed = { "html", "cssls", "pyright", "ts_ls", "gopls","clangd","rust-analyzer"},
+      ensure_installed = { "html", "cssls", "pyright", "ts_ls", "gopls","clangd","rust_analyzer"},
     },
   },
 
   {
     "neovim/nvim-lspconfig",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = { "williamboman/mason-lspconfig.nvim" },
     config = function()
       require "configs.lspconfig"
     end,
